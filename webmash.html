@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--Student Name: Vyankatesh Manohar Kulkarni.
+    Student Id: 1001409017.
+    Project 2: Web Mashup: Display House Address on a Map with Weather details. Due Date (26th October)-->
+<html lang="en">
+<head>
+    <title>Web Mashup: Display Address with Weather Details</title>
+    <h1 style="text-align: center; color: brown">Address and Weather Details</h1>
+    <meta charset="utf-8"/>
+    <style>
+
+      #map {
+        height: 100%;
+      }
+      html, body {
+      	background-image : url("http://www.dreamtemplate.com/dreamcodes/bg_images/color/c12.jpg");
+    	background-size: auto;
+    	background-repeat: no-repeat;    
+        height: 100%; margin: 0;padding: 0;}
+      h2{color: green;}
+      </style>
+    <script type="text/javascript" src="webmash.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6cgX58hMqtLANvNoBnJGFEQmtEUK-B3M&callback=initializeMap" type="text/javascript" ></script>
+</head>
+<body onload="initializeMap();">
+ <h3 align="right"><input type="button" name="clear" value="Clear All Details" onclick="clearhistory()"></h3> 
+  <h2><i>Address and Weather History :</i></h2>
+    <textarea id="history" style="width: 1000px;height: 50px" readonly="true">
+    </textarea><br><br>    
+    <div id="map" style="width: 600px; height: 500px;" ></div><br/>
+</body>
+</html>
